@@ -1,0 +1,95 @@
+/*code to make website responsive*/
+
+/*@media tags for responsive website*/
+@media only screen and (max-width:900px){
+
+    .footer-inner .box{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .sf-menu li a{
+        padding-left: .75em;
+        padding-right: .75em;
+    }
+}
+@media only screen and (max-width:750px){
+
+    .sf-menu li a{
+        padding-left: .55em;
+        padding-right: .55em;
+    }
+}
+@media only screen and (max-width:400px) {
+    .top-menu, .sf-menu {
+        display: none;
+    }
+
+    .logo {
+        margin: 0px;
+    }
+
+    .header {
+        padding-top: 10px;
+    }
+
+    .small-top-menu {
+        display: block;
+    }
+
+    .slider {
+        padding-top: 0;
+        padding-bottom: 30px;
+    }
+
+    .service-subtitle {
+        line-height: 2em;
+        margin-bottom: 20px;
+    }
+
+    .tagline {
+        padding: 20px 0 10px 0;
+    }
+
+    div.service-box {
+        padding-top: 20px;
+        padding-bottom: 0;
+    }
+}
+
+.sf-menu, .sf-menu * {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.sf-menu li {
+    position: relative;
+}
+.sf-menu ul {
+    position: absolute;
+    display: none;
+    top: 100%;
+    left: 0;
+    z-index: 99;
+}
+.sf-menu > li {
+    float: left;
+}
+.sf-menu li:hover > ul,
+.sf-menu li.sfHover > ul {
+    display: block;
+}
+
+.sf-menu a {
+    display: block;
+    position: relative;
+}
+.sf-menu ul ul {
+    top: 0;
+    left: 100%;
+}
+
+.sf-menu {
+    float: left;
+    margin-bottom: 1em;
+}
+
