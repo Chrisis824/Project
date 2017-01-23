@@ -9,6 +9,9 @@
     <link href='http://fonts.googleapis.com/css?family=Quando' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,300|Droid+Serif:400,300' rel='stylesheet' type='text/css'>
 
+    <script type="text/javascript" src="js/ImageSlider.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/ImageSlider.css">
+
 </head>
 <body>
 <div class="wrapper">
@@ -50,7 +53,7 @@
                         <form name="dropdown" class="dropdown" action="#">
                             <nav>
                                 <section>
-                                    <select name="selected" id="target" accesskey="E" onChange="goToNewPage(document.dropdown.selected)">
+                                    <select name="selected" id="target" accesskey="E">
                                         <option value="index.html">Home</option>
                                         <option value="about.html">About us</option>
                                         <option value="gallery.html">Gallery</option>
@@ -64,25 +67,23 @@
                 </div>
             </div>
         </div>
-        <div class="slider">
-            <div class="row">
-                <div class="columns large-12">
-                    <div class="row slider-row">
-                        <div class="columns large-12">
-                            <div class="slider">
-                                <ul class="slides">
-                                    <li><img src="images/car1.jpg" alt=""></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        <div class="container">
+            <div class="slider_wrapper">
+                <ul id="image_slider">
+                    <li><img src="images/car1.jpg"></li>
+                    <li><img src="images/car2.jpeg"></li>
+                    <li><img src="images/car3.jpg"></li>
+                    <li><img src="images/car3.jpg"></li>
+                </ul>
+                <span class="nvgt" id="prev"></span>
+                <span class="nvgt" id="next"></span>
             </div>
         </div>
         <div class="tagline-row">
-            <div class="row tagline">
+            <div class ="row tagline">
                 <div class="columns large-12">
                     <h2 class="center">We offer the best values in the city</h2>
+                    </div>
                 </div>
             </div>
         </div>
@@ -91,22 +92,22 @@
                 <div class="columns large-4">
                     <div class="box">
                         <p><img src="images/bestchoice.jpg" alt="" class="service-img"></p>
-                        <h1>Something about the service of the page.</h1>
-                        <p>Something about the page.Something about the page.Something about the page.Something about the page.</p>
+                        <h1>Our store spells out its position as #1 retailer for imported cars in Cyprus!</h1>
+                        <p>We have the <strong>finest quality</strong> cars you can find in the market on great deals!</p>
                     </div>
                 </div>
                 <div class="columns large-4">
                     <div class="box">
                         <p><img src="images/bestchoice2.jpg" alt="" class="service-img"></p>
-                        <h1>Something about the service of page.</h1>
-                        <p>Something about the page.Something about the page.Something about the page.Something about the page.Something about the page.</p>
+                        <h1>2-Year Guarantee</h1>
+                        <p>On all cars if you encounter any problems on your engine or the Transmission system.</p>
                     </div>
                 </div>
                 <div class="columns large-4">
                     <div class="box">
-                        <p><img src="images/dmulogo.jpg" alt="" class="service-img"></p>
-                        <title>Something about the service of the page..</title>
-                        <p> Something about the page.Something about the page.Something about the page.Something about the page.Something about the page.</p>
+                        <p><img src="images/ecommerce.jpg" alt="" class="service-img"></p>
+                        <h1>Daily update</h1>
+                        <p>Our website is updated daily and includes <u>every</u> single product, sale and service we offer.</p>
                     </div>
                 </div>
             </div>
