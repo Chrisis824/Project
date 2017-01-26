@@ -7,22 +7,19 @@
         padding-left: 10px;
         padding-right: 10px;
     }
-    .sf-menu li a{
-        padding-left: .75em;
-        padding-right: .75em;
-    }
-}
-@media only screen and (max-width:750px){
 
-    .sf-menu li a{
-        padding-left: .55em;
-        padding-right: .55em;
+}
+
+/* When the screen is less than 680 pixels wide, hide all list items, except for the first one ("Home"). Show the list item that contains the link to open and close the topnav (li.icon) */
+@media screen and (max-width:680px) {
+    ul.topnav li:not(:first-child) {display: none;}
+    ul.topnav li.icon {
+        float: right;
+        display: inline-block;
     }
 }
+
 @media only screen and (max-width:400px) {
-    .top-menu, .sf-menu {
-        display: none;
-    }
 
     .logo {
         margin: 0px;
@@ -30,15 +27,6 @@
 
     .header {
         padding-top: 10px;
-    }
-
-    .small-top-menu {
-        display: block;
-    }
-
-    .slider-wrapper {
-        padding-top: 0;
-        padding-bottom: 30px;
     }
 
     .service-subtitle {
@@ -56,40 +44,5 @@
     }
 }
 
-.sf-menu, .sf-menu * {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-.sf-menu li {
-    position: relative;
-}
-.sf-menu ul {
-    position: absolute;
-    display: none;
-    top: 100%;
-    left: 0;
-    z-index: 99;
-}
-.sf-menu > li {
-    float: left;
-}
-.sf-menu li:hover > ul,
-.sf-menu li.sfHover > ul {
-    display: block;
-}
 
-.sf-menu a {
-    display: block;
-    position: relative;
-}
-.sf-menu ul ul {
-    top: 0;
-    left: 100%;
-}
-
-.sf-menu {
-    float: left;
-    margin-bottom: 1em;
-}
 

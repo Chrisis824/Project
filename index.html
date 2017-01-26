@@ -9,8 +9,9 @@
     <link href='http://fonts.googleapis.com/css?family=Quando' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,300|Droid+Serif:400,300' rel='stylesheet' type='text/css'>
 
-    <script type="text/javascript" src="js/ImageSlider.js"></script>
-    <link rel="stylesheet" type="text/css" href="css/ImageSlider.css">
+
+    <script type="text/javascript" src="js/res.js"></script>
+
 
 </head>
 <body>
@@ -19,64 +20,26 @@
         <div class="row">
             <div class="columns large-12  header-inner"> <a href="index.html"><img src="images/logo.png" alt="" class="logo"></a> </div>
             <div class="columns large-12">
-                <nav>
-                    <section>
-                        <ul class="sf-menu large-12">
-                            <li class="active"><a href="index.html">Home</a></li>
-                            <li><a href="about.html">About us</a></li>
 
-                            <li><a href="stock.html">Our Stock</a></li>
-                            <li class="has-dropdown"><a href="services.html">Services</a>
-                                <ul class="dropdown">
-                                    <li class="has-dropdown"><a href="#">Dropdown 1</a>
-                                        <ul class="dropdown">
-                                            <li><a href="#">Dropdown 2</a></li>
-                                            <li><a href="#">Dropdown 3</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="#">Dropdown 1</a></li>
-                                    <li><a href="#">Dropdown 2</a></li>
-                                    <li><a href="#">Dropdown 3</a></li>
-                                    <li><a href="#">See all &rarr;</a></li>
-                                </ul>
+                        <ul class="topnav" id="myTopnav">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Stock</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">About</a></li>
+                            <li class="icon">
+                                <a href="javascript:void(0);" onclick="myFunction()">☰</a>
                             </li>
-                            <li><a href="contact.html">Contact Us</a></li>
                         </ul>
-                    </section>
-                </nav>
             </div>
         </div>
-        <div class="row">
-            <div class="columns large-12 small-top-menu">
-                <div class="row">
-                    <div class="columns large-12 plr0 top-nav">
-                        <form name="dropdown" class="dropdown" action="#">
-                            <nav>
-                                <section>
-                                    <select name="selected" id="target" accesskey="E">
-                                        <option value="index.html">Home</option>
-                                        <option value="about.html">About us</option>
-                                        <option value="gallery.html">Gallery</option>
-                                        <option value="services.html">Services</option>
-                                        <option value="contact.html">Contact us</option>
-                                    </select>
-                                </section>
-                            </nav>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
+
         <div class="container">
-            <div class="slider_wrapper">
-                <ul id="image_slider">
-                    <li><img src="images/car1.jpg"></li>
-                    <li><img src="images/car2.jpeg"></li>
-                    <li><img src="images/car3.jpg"></li>
-                    <li><img src="images/car3.jpg"></li>
-                </ul>
-                <span class="nvgt" id="prev"></span>
-                <span class="nvgt" id="next"></span>
+            <div id="slider">
+                <figure>
+                    <img src="images/car4.jpg" alt>
+                    <img src="images/car2.jpeg" alt>
+                    <img src="images/car3.jpg" alt>
+                </figure>
             </div>
         </div>
         <div class="tagline-row">
@@ -112,40 +75,26 @@
                 </div>
             </div>
         </div>
-        <div class="testimonial-row">
-            <div class="row">
-                <div class="columns large-11">
-                    <div class="testimonial flexcar">
-                        <ul class="slides">
-                            <li>
-                                <p>Something about the page.Something about the page.Something about the page.Something about the page.Something about the page.</p>
-                            </li>
-                            <li>
-                                <p>Something about the page.Something about the page.Something about the page.Something about the page.Something about the page.Something about the page. </p>
-                            </li>
-                            <li>
-                                <p>Something about the page.Something about the page.Something about the page.Something about the page.Something about the page.Something about the page.Something about the page. </p>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+    <div class="checkout">
+    <div class="textimage">
+        <img src="images/checkout.jpg" alt="checkout">
+        <div class="textbox">
+            <p class="text">CHECK OUR STOCK NOW!</p>
         </div>
+    </div>
+    </div>
         <footer class="footer">
             <div class="row">
                 <div class="columns large-12 footer-inner">
                     <div class="row">
                         <div class="columns large-3 box">
-                            <div class="">
                                 <h2 class="footer-title">Resources</h2>
                                 <ul>
                                     <li><a href="index.html">Home</a></li>
                                     <li><a href="stock.html">Our Stock</a></li>
                                     <li><a href="service.html">Services</a></li>
                                     <li><a href="contact.html">Contact us</a></li>
-
                                 </ul>
-                            </div>
                         </div>
                         <div class="columns large-3 box">
                             <div>
@@ -185,7 +134,6 @@
             </div>
         </div>
     </div>
-</div>
 
 
 </body>
