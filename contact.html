@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Chrisis Cars</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <!--fonts from google APIs-->
+    <link href='http://fonts.googleapis.com/css?family=Quando' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,300|Droid+Serif:400,300' rel='stylesheet' type='text/css'>
+
+
+    <script type="text/javascript" src="js/res.js"></script>
+
+
+</head>
+<body>
+<div class="wrapper">
+    <div class="header">
+        <div class="row">
+            <div class="columns large-12  header-inner"> <a href="index.html"><img src="images/logo.png" alt="" class="logo"></a> </div>
+            <div class="columns large-12">
+
+                <ul class="topnav" id="myTopnav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Stock</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li class="icon">
+                        <a href="javascript:void(0);" onclick="myFunction()">☰</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row content-wrapper">
+    <div class="columns large-12">
+        <div class="row">
+            <div class="columns large-12 content ">
+                <h1 class="page-title">Contact Us</h1>
+                <div>
+                    <h2 class="sub-title">For any questions about our shop or a specific car, please feel free to fill the contact form below and Rate our website.</h2>
+                </div>
+                <div class="contact-form">
+                    <form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
+                        <div class="row">
+                            <label for="name">Your name:</label><br />
+                            <input id="name" class="input" name="name" type="text" placeholder="Full Name" size="30" /><br />
+                        </div>
+                        <div class="row">
+                            <label for="email">Your email:</label><br />
+                            <input id="email" class="input" name="email" type="text" placeholder="Email Address" size="30" /><br />
+                        </div>
+                        <div class="row">
+                            <label for="email">Your telephone number:</label><br />
+                            <input id="phone" class="input" name="phone" type="text" placeholder="Phone Number" size="30" /><br />
+                        </div>
+                        <div class="row">
+                            <label for="message">Your message:</label><br />
+                            <textarea id="message" class="input" name="message" rows="5" cols="60"></textarea><br />
+                        </div>
+                        <input id="submit_button" type="submit" value="Submit" />
+                    </form>
+
+                </div>
+                    <div class="company">
+                        <h3>We are located right here!</h3>
+                        <div id="map"></div>
+                        <script>
+                            function initMap() {
+                                var uluru = {lat: 34.665971, lng: 33.014821};
+                                var map = new google.maps.Map(document.getElementById('map'), {
+                                    zoom: 13,
+                                    center: uluru
+                                });
+                                var marker = new google.maps.Marker({
+                                    position: uluru,
+                                    map: map
+                                });
+                            }
+                        </script>
+                        <script async defer
+                                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC3hRs_ZXKY3E-sQHc-x_RZ8LeocPRMD2Y&callback=initMap">
+                        </script>
+                        </div>
+                <h1 class="sub-title">For more information:</h1>
+                        <ul>
+                            <li class="company-name">Chrysanthos Konstantinidis Motors Trading LTD</li>
+                            <li class="street-address">Omonoias 37, Limassol, Cyprus</li>
+                            <li class="email"><strong>Email:</strong> chrysanthosmotors@gmail.com</li>
+                            <li class="telephone"><strong>Telephone Number:</strong> 25365665</li>
+                            <li class="fax"><strong>Fax Number:</strong> 25661090</li>
+                        </ul>
+                    </div>
+                </div>
+
+
+<footer class="footer">
+    <div class="row">
+        <div class="columns large-12 footer-inner">
+            <div class="columns large-3 box">
+                <h2 class="footer-title">Resources</h2>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="stock.html">Our Stock</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact us</a></li>
+                </ul>
+            </div>
+            <div class="columns large-3 box">
+                <div>
+                    <h2 class="footer-title">Links </h2>
+                    <ul>
+                        <li><a href="index.html">Link 1</a></li>
+                        <li><a href="stock.html">Link 2</a></li>
+                        <li><a href="contact.html">Link 3</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="columns large-3 box">
+                <div>
+                    <h2 class="footer-title">Follow us</h2>
+                    <ul>
+                        <li><a href="#" class="media tweeter"></a>Follow us on Twitter</li>
+                        <li><a href="#" class="media youtube"></a>Follow us on Youtube</li>
+                        <li><a href="#" class="media facebook"></a>Follow us on Facebook</li>
+                        <li><a href="#" class="media gmail"></a>Follow us on Google plus</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="columns large-3 box">
+                <div>
+                    <h2 class="footer-title">Contact us</h2>
+                    <ul>
+                        <li><strong>Address: </strong>Omonoias 37, Limassol, Cyprus</li>
+                        <li><strong>Tel:</strong> 25365665</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        </div>
+</footer>
+    </div>
+</div>
+</body>
+</html>

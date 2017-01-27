@@ -192,7 +192,7 @@ div.service-box .service h1{
 
 /*"check this out image"*/
 
-.checkout {
+/*.checkout {
     margin:0 auto;
 }
 
@@ -236,6 +236,25 @@ div.service-box .service h1{
 .textbox {
     -webkit-transition: all 0.7s ease;
     transition: all 0.7s ease;
+}*/
+
+.flashytext {
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+.flash {
+    animation-name: flash;
+    animation-duration: 0.2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-play-state: running;
+}
+
+@keyframes flash {
+    from {color: red;}
+    to {color: black;}
 }
 
 
@@ -249,36 +268,33 @@ footer.footer{
 h2.footer-title{
     color: #fff;
     padding-bottom: 20px;
-    font-size: 1.6em;
+    font-size: 2em;
     font-weight: bold;
     text-transform: uppercase;
     margin-bottom: 0;
+    text-align: center;
 }
 
 .footer-inner{
     font-size: .75em;
     color: #fff;
+
 }
 
 .footer-inner .box{
    border-right:2px solid #011021;
-   padding-left: 50px;
-   padding-right: 50px;
-}
+   padding-bottom: 10%;
 
-.footer-inner .box:first-child{
-   padding-left: 20px;
-   border-left: 0;
 }
 
 .footer-inner .box:last-child{
    border-right: 0;
-   padding-right: 20px;
 }
 
 footer ul li{
     display: block;
     padding: 5px 0;
+    font-size: 1.2em;
 }
 
 a.media{
@@ -288,6 +304,7 @@ a.media{
    vertical-align:middle;
    display: inline-block;
    margin-right: 10px;
+
 }
 
 .tweeter{
@@ -427,8 +444,6 @@ select {
     clear: both
 }
 
-
-
 .row .row {
     width: auto;
     margin-left: -0.9375em;
@@ -448,9 +463,6 @@ select {
     float: left
 }
 
-
-
-
     @media only screen and (min-width: 48em) {
 
         .large-3 {
@@ -469,5 +481,36 @@ select {
         }
     }
 
+/*********About Us*********/
+.page-title {
+    text-align: center;
+    font-size: 2.3em;
+}
 
+.sub-title {
+    text-align: center;
+}
 
+/********Contact-Us*******/
+.contact-form {
+    text-align: center;
+}
+
+.company{
+    float:right;
+    margin-bottom: 5%;
+}
+
+ #map {
+     height:400px;
+     width:400px;
+ }
+
+@media screen and (max-width:320px){
+
+#map {
+    height:200px;
+    width:200px;
+}
+
+}
