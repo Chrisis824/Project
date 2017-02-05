@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Chrisis Cars</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <!--fonts from google APIs-->
+    <link href='http://fonts.googleapis.com/css?family=Quando' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,300|Droid+Serif:400,300' rel='stylesheet' type='text/css'>
+
+
+    <script type="text/javascript" src="js/res.js"></script>
+
+
+</head>
+
+<body>
+
+<div class="wrapper">
+    <div class="header">
+        <div class="row">
+            <div class="columns large-12  header-inner"> <a href="index.html"><img src="images/logo.png" alt="" class="logo"></a> </div>
+            <div class="columns large-12">
+
+                <ul class="topnav" id="myTopnav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="stock.html">Stock</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li class="icon">
+                        <a href="javascript:void(0);" onclick="myFunction()">☰</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row content-wrapper">
+    <div class="columns large-12">
+        <div class="row">
+            <div class="columns large-12 content">
+                <h1 class="page-title">Our Stock</h1>
+                <h2 class="sub-title">Here is a list of all the cars we currently have in our store</h2>
+                <ul class="row">
+                    <li class="columns large-4">
+                        <p><img src="images/mercedesc220.jpg" alt="" class="stockimage"></p>
+                        <div class="modal">
+                            <div class="modal-content">
+                                <span class="close">&times;</span>
+                                <p>Some text in the Modal..</p>
+                            </div>
+                        </div>
+
+                        <h3 style="text-align: center">Mercedes-Benz C220 - 2014</h3>
+                    </li>
+
+                    <li class="columns large-4">
+                        <p><img src="images/cx5.jpg" alt="" class="stockimage"></p>
+                        <div class="modal">
+                            <div class="modal-content">
+                                <span class="close">&times;</span>
+                                <p>Some text in the Modal..</p>
+                            </div>
+                        </div>
+                        <h3 style="text-align: center">Mazda CX5 - 2013</h3>
+                    </li>
+
+                    <li class="columns large-4">
+                        <p><img src="images/toyotaauris.jpg" alt="" class="stockimage"></p>
+                        <h3 style="text-align: center">Toyota Auris - 2013</h3>
+                    </li>
+                    <li class="columns large-4">
+                        <p><img src="images/golf2014.jpg" alt="" class="stockimage"></p>
+                        <h3 style="text-align: center">VW Golf - 2014</h3>
+                    </li>
+                    <li class="columns large-4">
+                        <p><img src="images/mercedesa180.jpg" alt="" class="stockimage"></p>
+                        <h3 style="text-align: center">Mercedes-Benz A180 - 2014</h3>
+                    </li>
+                    <li class="columns large-4">
+                        <p><img src="images/juke2013.jpg" alt="" class="stockimage"></p>
+                        <h3 style="text-align: center">Nissan Juke - 2013</h3>
+                    </li>
+                </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script>
+    // Get the modal
+    var modal = document.getElementsByClassName("modal")[0];
+    modal.getElementsByClassName("modal")[1];
+//    modal.getElementsByClassName("modal")[2];
+//    modal.getElementsByClassName("modal")[3];
+//    modal.getElementsByClassName("modal")[4];
+//    modal.getElementsByClassName("modal")[5];
+
+    // Get the button that opens the modal
+    var popup = document.getElementsByClassName("stockimage")[0];
+    popup.getElementsByClassName("stockimage")[1];
+//    popup.getElementsByClassName("stockimage")[2];
+//    popup.getElementsByClassName("stockimage")[3];
+//    popup.getElementsByClassName("stockimage")[4];
+//    popup.getElementsByClassName("stockimage")[5];
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks the button, open the modal
+    popup.onclick = function() {
+        modal.style.display = "block";
+    }
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+        modal.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+</script>
+
+<footer class="footer">
+    <div class="row">
+        <div class="columns large-12 footer-inner">
+            <div class="row">
+                <div class="columns large-3 box">
+                    <h2 class="footer-title">Resources</h2>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="stock.html">Our Stock</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact us</a></li>
+                    </ul>
+                </div>
+                <div class="columns large-3 box">
+                    <div>
+                        <h2 class="footer-title">Links </h2>
+                        <ul>
+                            <li><a href="index.html">Link 1</a></li>
+                            <li><a href="stock.html">Link 2</a></li>
+                            <li><a href="contact.html">Link 3</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="columns large-3 box">
+                    <div>
+                        <h2 class="footer-title">Follow us</h2>
+                        <ul>
+                            <li><a href="#" class="media tweeter"></a>Follow us on Twitter</li>
+                            <li><a href="#" class="media youtube"></a>Follow us on Youtube</li>
+                            <li><a href="#" class="media facebook"></a>Follow us on Facebook</li>
+                            <li><a href="#" class="media gmail"></a>Follow us on Google plus</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="columns large-3 box">
+                    <div>
+                        <h2 class="footer-title">Contact us</h2>
+                        <ul>
+                            <li><strong>Address: </strong>Omonoias 37, Limassol, Cyprus</li>
+                            <li><strong>Tel:</strong> 25365665</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
