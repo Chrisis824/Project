@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="css/stylesheet.css">
     <!--fonts from google APIs-->
-    <link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,300' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Sans:400,300' rel='stylesheet' type='text/css'>
     <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,300" rel="stylesheet" type="text/css">
 
     <script type="text/javascript" src="js/res.js"></script>
@@ -16,7 +16,7 @@
 
 <body>
 
-<div class="wrapper">
+
     <div class="header">
         <div class="row">
             <div class="columns large-12  header-inner"> <a href="index.html"><img src="images/logo.png" alt="" class="logo"></a> </div>
@@ -35,7 +35,7 @@
         </div>
     </div>
 </div>
-
+    <div class="wrapper">
 <div class="row content-wrapper">
             <div class="columns large-12 content">
                 <h1 class="page-title">Our Stock</h1>
@@ -72,26 +72,152 @@
                             <h3 style="text-align: center">Mercedes-Benz C220 - 2014</h3>
                         </li>
                         <li class="columns large-4">
-                            <p><img src="images/cx5.jpg" alt="" class="stockimage"></p>
+
+                            <p><img src="images/cx5.jpg" alt="" class="stockimage" id="second"></p>
+                            <div id="myModal2" class="modal">
+                                <!-- Modal content -->
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <span class="close2">&times;</span>
+                                        <h1>Mazda CX-5</h1>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img src="images/cx5.jpg" alt="" height="330" width="330">
+                                        <ul class="cardetails">
+                                            <li><strong>Fuel Type:</strong> Diesel</li>
+                                            <li><strong>Body Type:</strong> SUV</li>
+                                            <li><strong>Transmission:</strong> Automatic</li>
+                                            <li><strong>Kilometers:</strong> 49000kms</li>
+                                            <li><strong>Year:</strong> 2013</li>
+                                            <li><strong>Power:</strong> 174bhp</li>
+                                            <li><strong>Colour:</strong> White</li>
+                                            <li><strong>Edition:</strong> Sport</li>
+                                        </ul>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <h3>Price: €23500</h3>
+                                    </div>
+                                </div>
+                            </div>
                             <h3 style="text-align: center">Mazda CX5 - 2013</h3>
                         </li>
                         <li class="columns large-4">
-                            <p><img src="images/toyotaauris.jpg" alt="" class="stockimage"></p>
+                            <p><img src="images/toyotaauris.jpg" alt="" class="stockimage" id="third"></p>
+                            <div id="myModal3" class="modal">
+                                <!-- Modal content -->
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <span class="close3">&times;</span>
+                                        <h1>Toyota Auris</h1>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img src="images/toyotaauris.jpg" alt="" height="330" width="330">
+                                        <ul class="cardetails">
+                                            <li><strong>Fuel Type:</strong> Petrol</li>
+                                            <li><strong>Body Type:</strong> Hatchback</li>
+                                            <li><strong>Transmission:</strong> Automatic</li>
+                                            <li><strong>Kilometers:</strong> 45000kms</li>
+                                            <li><strong>Year:</strong> 2013</li>
+                                            <li><strong>Power:</strong> 129bhp</li>
+                                            <li><strong>Colour:</strong> White</li>
+                                            <li><strong>Edition:</strong> Sport</li>
+                                        </ul>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <h3>Price: €14000</h3>
+                                    </div>
+                                </div>
+                            </div>
                             <h3 style="text-align: center">Toyota Auris - 2013</h3>
                         </li>
                         </ul>
 
                             <ul class="carlist">
                         <li class="columns large-4">
-                            <p><img src="images/golf2014.jpg" alt="" class="stockimage"></p>
+                            <p><img src="images/golf2014.jpg" alt="" class="stockimage" id="fourth"></p>
+                            <div id="myModal4" class="modal">
+                                <!-- Modal content -->
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <span class="close4">&times;</span>
+                                        <h1>Volkswagen Golf</h1>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img src="images/golf2014.jpg" alt="" height="330" width="330">
+                                        <ul class="cardetails">
+                                            <li><strong>Fuel Type:</strong> Petrol</li>
+                                            <li><strong>Body Type:</strong> Hatchback</li>
+                                            <li><strong>Transmission:</strong> Automatic</li>
+                                            <li><strong>Kilometers:</strong> 37000kms</li>
+                                            <li><strong>Year:</strong> 2014</li>
+                                            <li><strong>Power:</strong> 140bhp</li>
+                                            <li><strong>Colour:</strong> Silver</li>
+                                            <li><strong>Edition:</strong> S Line</li>
+                                        </ul>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <h3>Price: €15400</h3>
+                                    </div>
+                                </div>
+                            </div>
                             <h3 style="text-align: center">VW Golf - 2014</h3>
                         </li>
                         <li class="columns large-4">
-                            <p><img src="images/mercedesa180.jpg" alt="" class="stockimage"></p>
+                            <p><img src="images/mercedesa180.jpg" alt="" class="stockimage" id="fifth"></p>
+                            <div id="myModal5" class="modal">
+                                <!-- Modal content -->
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <span class="close5">&times;</span>
+                                        <h1>Mercedes-Benz A180</h1>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img src="images/mercedesa180.jpg" alt="" height="330" width="330">
+                                        <ul class="cardetails">
+                                            <li><strong>Fuel Type:</strong> Petrol</li>
+                                            <li><strong>Body Type:</strong> Hatchback</li>
+                                            <li><strong>Transmission:</strong> Automatic</li>
+                                            <li><strong>Kilometers:</strong> 30000kms</li>
+                                            <li><strong>Year:</strong> 2014</li>
+                                            <li><strong>Power:</strong> 140bhp</li>
+                                            <li><strong>Colour:</strong> Blue</li>
+                                            <li><strong>Edition:</strong> Sport</li>
+                                        </ul>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <h3>Price: €19900</h3>
+                                    </div>
+                                </div>
+                            </div>
                             <h3 style="text-align: center">Mercedes-Benz A180 - 2014</h3>
                         </li>
                         <li class="columns large-4">
-                            <p><img src="images/juke2013.jpg" alt="" class="stockimage"></p>
+                            <p><img src="images/juke2013.jpg" alt="" class="stockimage" id="sixth"></p>
+                            <div id="myModal6" class="modal">
+                                <!-- Modal content -->
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <span class="close6">&times;</span>
+                                        <h1>Nissan Juke</h1>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img src="images/juke2013.jpg" alt="" height="330" width="330">
+                                        <ul class="cardetails">
+                                            <li><strong>Fuel Type:</strong> Petrol</li>
+                                            <li><strong>Body Type:</strong> SUV</li>
+                                            <li><strong>Transmission:</strong> Automatic</li>
+                                            <li><strong>Kilometers:</strong> 22000kms</li>
+                                            <li><strong>Year:</strong> 2013</li>
+                                            <li><strong>Power:</strong> 160bhp</li>
+                                            <li><strong>Colour:</strong> Brown</li>
+                                            <li><strong>Edition:</strong> Standard</li>
+                                        </ul>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <h3>Price: €13900</h3>
+                                    </div>
+                                </div>
+                            </div>
                             <h3 style="text-align: center">Nissan Juke - 2013</h3>
                         </li>
                             </ul>
@@ -101,27 +227,90 @@
 <script>
     // Get the modal
     var modal = document.getElementById('myModal');
+    var modal2 = document.getElementById('myModal2');
+    var modal3 = document.getElementById('myModal3');
+    var modal4 = document.getElementById('myModal4');
+    var modal5 = document.getElementById('myModal5');
+    var modal6 = document.getElementById('myModal6');
 
     // Get the button that opens the modal
     var click = document.getElementById("first");
+    var click2 = document.getElementById("second");
+    var click3 = document.getElementById("third");
+    var click4 = document.getElementById("fourth");
+    var click5 = document.getElementById("fifth");
+    var click6 = document.getElementById("sixth");
+
 
     // Get the <span> element that closes the modal
     var span = document.getElementsByClassName("close")[0];
+    var span2 = document.getElementsByClassName("close2")[0];
+    var span3 = document.getElementsByClassName("close3")[0];
+    var span4 = document.getElementsByClassName("close4")[0];
+    var span5 = document.getElementsByClassName("close5")[0];
+    var span6 = document.getElementsByClassName("close6")[0];
+
 
     // When the user clicks the button, open the modal
     click.onclick = function() {
         modal.style.display = "block";
+    }
+    click2.onclick = function() {
+        modal2.style.display = "block";
+    }
+    click3.onclick = function () {
+        modal3.style.display = "block";
+    }
+    click4.onclick = function() {
+        modal4.style.display = "block";
+    }
+    click5.onclick = function () {
+        modal5.style.display = "block";
+    }
+    click6.onclick = function() {
+        modal6.style.display = "block";
     }
 
     // When the user clicks on <span> (x), close the modal
     span.onclick = function() {
         modal.style.display = "none";
     }
+    span2.onclick = function() {
+        modal2.style.display = "none";
+    }
+    span3.onclick = function() {
+        modal3.style.display = "none";
+    }
+    span4.onclick = function() {
+        modal4.style.display = "none";
+    }
+    span5.onclick = function() {
+        modal5.style.display = "none";
+    }
+    span6.onclick = function() {
+        modal6.style.display = "none";
+    }
+
 
     // When the user clicks anywhere outside of the modal, close it
     window.onclick = function(event) {
         if (event.target == modal) {
             modal.style.display = "none";
+        }
+        if (event.target == modal2) {
+            modal2.style.display = "none";
+        }
+        if (event.target == modal3) {
+            modal3.style.display = "none";
+        }
+        if (event.target == modal4) {
+            modal4.style.display = "none";
+        }
+        if (event.target == modal5) {
+            modal5.style.display = "none";
+        }
+        if (event.target == modal6) {
+            modal6.style.display = "none";
         }
     }
 </script>
@@ -173,6 +362,6 @@
         </div>
     </div>
 </footer>
-
+</div>
 </body>
 </html>

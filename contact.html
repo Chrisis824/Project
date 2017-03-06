@@ -15,7 +15,6 @@
 
 </head>
 <body>
-<div class="wrapper">
     <div class="header">
         <div class="row">
             <div class="columns large-12  header-inner"> <a href="index.html"><img src="images/logo.png" alt="" class="logo"></a> </div>
@@ -32,8 +31,7 @@
             </div>
         </div>
     </div>
-</div>
-
+<div class="wrapper">
 <div class="row content-wrapper">
     <div class="columns large-12">
         <div class="row">
@@ -46,21 +44,21 @@
                     <form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
                         <div class="row">
                             <label for="name">Your name:</label><br />
-                            <input id="name" class="input" name="name" type="text" placeholder="Full Name" size="30" /><br />
+                            <input id="name" class="input" name="name" type="text" placeholder="Full Name" size="30" required><br />
                         </div>
                         <div class="row">
                             <label for="email">Your email:</label><br />
-                            <input id="email" class="input" name="email" type="text" placeholder="Email Address" size="30" /><br />
+                            <input id="email" class="input" name="email" type="email" placeholder="Email Address" size="30" required><br />
                         </div>
                         <div class="row">
                             <label for="email">Your telephone number:</label><br />
-                            <input id="phone" class="input" name="phone" type="text" placeholder="Phone Number" size="30" /><br />
+                            <input id="phone" class="input" name="phone" type="text" placeholder="Phone Number" size="30" required/><br />
                         </div>
                         <div class="row">
                             <label for="message">Your message:</label><br />
-                            <textarea id="message" class="input" name="message" rows="5" cols="60"></textarea><br />
+                            <textarea id="message" class="input" name="message" rows="5" cols="60" required></textarea><br />
                         </div>
-                        <input id="submit_button" type="submit" value="Submit" />
+                        <input id="submit_button" type="submit" value="Submit">
                     </form>
 
                 </div>
@@ -86,8 +84,10 @@
                     </script>
                 </div>
 
-                <h1 class="sub-title">For more information:</h1>
+
+                <div class="info">
                 <ul>
+                    <h1>For more information:</h1>
                     <li class="company-name">Chrysanthos Konstantinidis Motors Trading LTD</li>
                     <li class="street-address">Omonoias 37, Limassol, Cyprus</li>
                     <li class="email"><strong>Email:</strong> chrysanthosmotors@gmail.com</li>
@@ -95,7 +95,7 @@
                     <li class="fax"><strong>Fax Number:</strong> 25661090</li>
                 </ul>
             </div>
-        </div>
+
         </div>
 
 
@@ -146,5 +146,6 @@
         </footer>
     </div>
 </div>
+    </div>
 </body>
 </html>

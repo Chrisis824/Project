@@ -102,8 +102,6 @@ p{
 
     }
 
-
-
     @media screen and (max-width:680px) {
         ul.topnav.responsive {position: relative;}
         ul.topnav.responsive li.icon {
@@ -120,10 +118,7 @@ p{
             text-align: left;
         }
 
-
     }
-
-
 
 /************home page**********/
 .tagline-row{
@@ -377,9 +372,6 @@ html, body {
     font-size: 100%
 }
 
-a:focus {
-    outline: none;
-}
 
 img {
     max-width: 100%;
@@ -447,8 +439,6 @@ select {
         }
     }
 
-
-
 /*********About Us*********/
 .page-title {
     text-align: center;
@@ -486,7 +476,7 @@ select {
      box-sizing: border-box;
      resize:none;
  }
-    input[type=text]{
+    input[type=text], [type=email]{
         width: 100%;
         padding: 12px 20px;
         margin: 8px 0;
@@ -540,9 +530,9 @@ select {
     }
 }
 
-    @media only screen and (max-width:900px){
+    @media only screen and (max-width:900px) {
 
-        .footer-inner .box{
+        .footer-inner .box {
             padding-left: 10px;
             padding-right: 10px;
         }
@@ -552,9 +542,6 @@ select {
 
 .stockimage{
     border:14px solid rgb(236, 236, 236);
-    max-width: 100%;
-    height: auto;
-    width:100%;
 }
 
 .stockimage:hover{
@@ -613,7 +600,7 @@ select {
     }
 
     /* The Close Button */
-    .close {
+    .close, .close1, .close2, .close3, .close4, .close5, .close6{
         color: white;
         float: right;
         font-size: 28px;
