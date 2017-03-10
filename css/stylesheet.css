@@ -558,11 +558,11 @@ input[type=submit]:hover {
     opacity: 0.7;
 }
 
-
-
-.carlist img {
+.carlist{
     display: inline-block;
 }
+
+
 
 /*code for the modal of the cars*/
 /* The Modal (background) */

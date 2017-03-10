@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a65bfe50-9cf3-43d4-b6bf-d530785b89f8" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/css/ImageSlider.css" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/about.html" afterPath="$PROJECT_DIR$/about.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/contact.html" afterPath="$PROJECT_DIR$/contact.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/stylesheet.css" afterPath="$PROJECT_DIR$/css/stylesheet.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/ImageSlider.js" afterPath="$PROJECT_DIR$/js/ImageSlider.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stock.html" afterPath="$PROJECT_DIR$/stock.html" />
     </list>
     <ignored path="mywebsite.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -33,8 +26,8 @@
       <file leaf-file-name="stock.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/stock.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="578">
-              <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+            <state relative-caret-position="102">
+              <caret line="6" column="12" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
               <folding>
                 <element signature="e#2093#2100#0" expanded="true" />
                 <element signature="n#style#0;n#h3#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#1;n#body#0;n#!!top" expanded="true" />
@@ -56,8 +49,8 @@
       <file leaf-file-name="stylesheet.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/stylesheet.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="146">
-              <caret line="564" column="1" selection-start-line="564" selection-start-column="1" selection-end-line="564" selection-end-column="1" />
+            <state relative-caret-position="17">
+              <caret line="544" column="0" selection-start-line="544" selection-start-column="0" selection-end-line="544" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -263,12 +256,12 @@
       <workItem from="1488204079201" duration="8400000" />
       <workItem from="1488764225256" duration="2141000" />
       <workItem from="1489082831198" duration="1526000" />
-      <workItem from="1489095780588" duration="7202000" />
+      <workItem from="1489095780588" duration="7470000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="97119000" />
+    <option name="totallyTimeSpent" value="97387000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="2" width="1370" height="733" extended-state="0" />
@@ -655,8 +648,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/stock.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+        <state relative-caret-position="102">
+          <caret line="6" column="12" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
           <folding>
             <element signature="e#2093#2100#0" expanded="true" />
             <element signature="n#style#0;n#h3#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#1;n#body#0;n#!!top" expanded="true" />
@@ -676,8 +669,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/stylesheet.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="146">
-          <caret line="564" column="1" selection-start-line="564" selection-start-column="1" selection-end-line="564" selection-end-column="1" />
+        <state relative-caret-position="17">
+          <caret line="544" column="0" selection-start-line="544" selection-start-column="0" selection-end-line="544" selection-end-column="0" />
           <folding />
         </state>
       </provider>
