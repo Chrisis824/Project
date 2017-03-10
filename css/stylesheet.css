@@ -1,12 +1,12 @@
-
-    body{
-        font-size: 1.1em;
-        line-height: 1.5em;
-        color: #5d5151;
-        font-family:'Droid Sans', serif;
-        background-color: #f6f6f6;
-        background-image: url('../images/bg.png');
-    }
+/**general styling of page*/
+body{
+    font-size: 1.1em;
+    line-height: 1.5em;
+    color: #5d5151;
+    font-family:'Droid Sans', serif;
+    background-color: #f6f6f6;
+    background-image: url('../images/bg.png');
+}
 
 
 .center{
@@ -29,112 +29,113 @@ p{
 }
 
 .wrapper{
-   background: white;
-   max-width:64em;
-   margin: auto;
-   box-shadow: 0 10px 80px rgba(0,0,0,.3);
+    background: white;
+    max-width:64em;
+    margin: auto;
+    box-shadow: 0 10px 80px rgba(0,0,0,.3);
 }
 
 
 .content ul li{
-   list-style: none
+    list-style: none
 }
 
 /**********slider***********/
-    @keyframes slidy {
-        0% { left: 0%; }
-        20% { left: 0%; }
-        25% { left: -100%; }
-        45% { left: -100%; }
-        50% { left: -200%; }
-        70% { left: -200%; }
-        75% { left: -300%; }
-        95% { left: -300%; }
-        100% { left: -400%; }
-    }
+@keyframes slidy {
+    0% { left: 0%; }
+    20% { left: 0%; }
+    25% { left: -100%; }
+    45% { left: -100%; }
+    50% { left: -200%; }
+    70% { left: -200%; }
+    75% { left: -300%; }
+    95% { left: -300%; }
+    100% { left: -400%; }
+}
 
-    body { margin: 0; }
-    div#slider { overflow: hidden; }
-    div#slider figure img { width: 20%; float: left; }
-    div#slider figure {
-        position: relative;
-        width: 500%;
-        margin: 0;
-        left: 0;
-        text-align: left;
-        font-size: 0;
-        animation: 20s slidy infinite;
-    }
+body { margin: 0; }
+div#slider { overflow: hidden; }
+div#slider figure img { width: 20%; float: left; }
+div#slider figure {
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    text-align: left;
+    font-size: 0;
+    animation: 20s slidy infinite;
+}
 
 /***************topmenu****************/
-    ul.topnav {
+ul.topnav {
 
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-        background-color: #2143f6;
-    }
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #2143f6;
+}
 
-    ul.topnav li {float: left;}
+ul.topnav li {float: left;}
 
-    ul.topnav li a {
+ul.topnav li a {
+    display: inline-block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+ul.topnav li a:hover {background-color: #555;}
+
+ul.topnav li.icon {display: none;}
+
+@media screen and (max-width:680px) {
+    ul.topnav li:not(:first-child) {display: none;}
+    ul.topnav li.icon {
+        float: right;
         display: inline-block;
-        color: #f2f2f2;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-        transition: 0.3s;
-        font-size: 17px;
     }
 
-    ul.topnav li a:hover {background-color: #555;}
 
-    ul.topnav li.icon {display: none;}
+}
 
-    @media screen and (max-width:680px) {
-        ul.topnav li:not(:first-child) {display: none;}
-        ul.topnav li.icon {
-            float: right;
-            display: inline-block;
-        }
-
-
+/*****code to make the top navbar responsive*****/
+@media screen and (max-width:680px) {
+    ul.topnav.responsive {position: relative;}
+    ul.topnav.responsive li.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    ul.topnav.responsive li {
+        float: none;
+        display: inline;
+    }
+    ul.topnav.responsive li a {
+        display: block;
+        text-align: left;
     }
 
-    @media screen and (max-width:680px) {
-        ul.topnav.responsive {position: relative;}
-        ul.topnav.responsive li.icon {
-            position: absolute;
-            right: 0;
-            top: 0;
-        }
-        ul.topnav.responsive li {
-            float: none;
-            display: inline;
-        }
-        ul.topnav.responsive li a {
-            display: block;
-            text-align: left;
-        }
-
-    }
+}
 
 /************home page**********/
 .tagline-row{
-   border-top:2px dotted rgb(233, 233, 233);
-   border-bottom:2px dotted rgb(233, 233, 233);
-   padding: 30px 0;
-   margin-bottom: 30px;
+    border-top:2px dotted rgb(233, 233, 233);
+    border-bottom:2px dotted rgb(233, 233, 233);
+    padding: 30px 0;
+    margin-bottom: 30px;
 }
 
 .tagline h2{
-   margin-top: 0;
+    margin-top: 0;
     font-size: 1.6em;
-   color: #000000;
-   margin-top: 0;
-   margin-bottom: 0;
-   line-height: 2em;
+    color: #000000;
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 2em;
     -webkit-transition: all 0.7s ease;
     transition: all 0.7s ease;
 }
@@ -154,23 +155,23 @@ div.service-box .service{
 }
 
 .service-box .service .box{
-   padding-right: 20px;
+    padding-right: 20px;
 }
 
 .service-box .service:last-child .box{
-   padding-right: 10px;
-   padding-left: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
 }
 
 .service-box .service:last-child .box:first-child{
-   padding-left: 0;
+    padding-left: 0;
 }
 .service-box .service:last-child .box:last-child{
-   padding-right: 0;
+    padding-right: 0;
 }
 
 .service-img{
-   border:14px solid rgb(236, 236, 236);
+    border:14px solid rgb(236, 236, 236);
     height:300px;
     -webkit-transition: all 0.5s ease;
     transition: all 0.5s ease;
@@ -182,9 +183,9 @@ div.service-box .service{
 }
 
 div.service-box .service h1{
-   color: #222;
-   text-transform: uppercase;
-   font-weight: bold;
+    color: #222;
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
 .flashytext {
@@ -205,6 +206,7 @@ div.service-box .service h1{
     animation-play-state: running;
 }
 
+/*blink*/
 @keyframes flash {
     from {color: red;}
     to {color: black;}
@@ -234,8 +236,8 @@ h2.footer-title{
 }
 
 .footer-inner .box{
-   border-right:2px solid #011021;
-   border-left: 1px solid #1a78e7;
+    border-right:2px solid #011021;
+    border-left: 1px solid #1a78e7;
     padding-right: 50px;
 }
 
@@ -245,27 +247,25 @@ h2.footer-title{
 }
 
 .footer-inner .box:last-child{
-   border-right: 0;
+    border-right: 0;
 }
 
 footer ul li{
     display: block;
-    padding: 5px 0;
+    padding: 3px 0;
     font-size: 1.2em;
 }
 
 a.media{
-   width:18px;
-   height: 18px;
-   line-height: 1em;
-   vertical-align:middle;
-   display: inline-block;
-   margin-right: 10px;
-
+    width:22px;
+    height: 22px;
+    line-height: 1em;
+    vertical-align:middle;
+    display: inline-block;
 }
 
 .tweeter{
-   background: url('../images/social-media.png') 0 -2px no-repeat;
+    background: url('../images/social-media.png') 0 -2px no-repeat;
     border-radius: 50%;
     -webkit-transition: -webkit-transform .8s ease-in-out;
     transition:         transform .8s ease-in-out;
@@ -277,7 +277,7 @@ a.media{
 }
 
 .youtube{
-   background: url('../images/social-media.png') 0 -28px no-repeat;
+    background: url('../images/social-media.png') 0 -28px no-repeat;
     border-radius: 50%;
     -webkit-transition: -webkit-transform .8s ease-in-out;
     transition:         transform .8s ease-in-out;
@@ -289,7 +289,7 @@ a.media{
 }
 
 .facebook{
-   background: url('../images/social-media.png') 0 -52px no-repeat;
+    background: url('../images/social-media.png') 0 -52px no-repeat;
     border-radius: 50%;
     -webkit-transition: -webkit-transform .8s ease-in-out;
     transition:         transform .8s ease-in-out;
@@ -301,7 +301,7 @@ a.media{
 }
 
 .gmail{
-   background: url('../images/social-media.png') 0 -77px no-repeat;
+    background: url('../images/social-media.png') 0 -77px no-repeat;
     border-radius: 50%;
     -webkit-transition: -webkit-transform .8s ease-in-out;
     transition:         transform .8s ease-in-out;
@@ -313,39 +313,41 @@ a.media{
 }
 
 .address-details{
-   margin-top:20px;
+    margin-top:20px;
 }
 
 .footer ul li a{
-   color: #fff;
+    color: #fff;
     text-decoration: none;
 }
 
-    .footer ul li a:hover {
+.footer ul li a:hover {
     text-decoration: underline;
-    }
+}
+
+
 
 .useful-links div{
-   padding-right: 40px;
+    padding-right: 40px;
 }
 
 .contact div{
-   padding-right: 40px;
+    padding-right: 40px;
 }
 
 span.small-icon{
-   margin-right: 15px;
-   display: inline-block;
+    margin-right: 15px;
+    display: inline-block;
 }
 
- .useful-links ul li{
-   background: no-repeat 0;
-   padding-left:20px;
- }
+.useful-links ul li{
+    background: no-repeat 0;
+    padding-left:20px;
+}
 
 .media ul.footer-list li{
     padding: 9px 0;
-    font-size: 1.5em;    
+    font-size: 1.5em;
 }
 
 
@@ -368,6 +370,7 @@ footer ul li a{
     box-sizing: border-box
 }
 
+/*general stuff*/
 html, body {
     font-size: 100%
 }
@@ -420,24 +423,24 @@ select {
     width: 100%;
     float: left
 }
+/*code for the div tags to make them responsive*/
+@media only screen and (min-width: 680px) {
 
-    @media only screen and (min-width: 680px) {
-
-        .large-3 {
-            position: relative;
-            width: 25%
-        }
-
-        .large-4 {
-            position: relative;
-            width: 33%
-        }
-
-        .large-12 {
-            position: relative;
-            width: 100%
-        }
+    .large-3 {
+        position: relative;
+        width: 25%
     }
+
+    .large-4 {
+        position: relative;
+        width: 33%
+    }
+
+    .large-12 {
+        position: relative;
+        width: 100%
+    }
+}
 
 /*********About Us*********/
 .page-title {
@@ -457,54 +460,61 @@ select {
 }
 
 .company{
-    float:right;
-    margin-bottom: 5%;
+    text-align: center;
 }
 
- #map {
-     height:400px;
-     width:400px;
- }
+#map {
+    height:450px;
+    width:450px;
+    margin:0 auto;
+}
 
- #message{
-     width: 100%;
-     padding: 12px 20px;
-     margin: 8px 0;
-     display: inline-block;
-     border: 1px solid #ccc;
-     border-radius: 4px;
-     box-sizing: border-box;
-     resize:none;
- }
-    input[type=text], [type=email]{
-        width: 100%;
-        padding: 12px 20px;
-        margin: 8px 0;
-        display: inline-block;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-        box-sizing: border-box;
-    }
+.info {
+    margin-top: 60px;
+    text-align: center;
+}
 
-    input[type=submit] {
-        width: 100%;
-        background-color: #4CAF50;
-        color: white;
-        padding: 14px 20px;
-        margin: 8px 0;
-        border: none;
-        border-radius: 4px;
-        cursor: pointer;
-    }
+#message{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize:none;
+}
+input[type=text], [type=email]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
 
-    input[type=submit]:hover {
-        background-color: #2143f6;
-    }
+input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #2143f6;
+}
+
+
 
 @media screen and (max-width:400px) {
     #map {
-        height: 280px;
-        width: 280px;
+        height: 320px;
+        width: 320px;
     }
 
     .logo {
@@ -530,13 +540,13 @@ select {
     }
 }
 
-    @media only screen and (max-width:900px) {
+@media only screen and (max-width:900px) {
 
-        .footer-inner .box {
-            padding-left: 10px;
-            padding-right: 10px;
-        }
+    .footer-inner .box {
+        padding-left: 10px;
+        padding-right: 10px;
     }
+}
 
 /*****stock*****/
 
@@ -548,93 +558,95 @@ select {
     opacity: 0.7;
 }
 
-.carlist{
+
+
+.carlist img {
     display: inline-block;
 }
 
+/*code for the modal of the cars*/
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
 
-    /* The Modal (background) */
-    .modal {
-        display: none; /* Hidden by default */
-        position: fixed; /* Stay in place */
-        z-index: 1; /* Sit on top */
-        padding-top: 100px; /* Location of the box */
-        left: 0;
-        top: 0;
-        width: 100%; /* Full width */
-        height: 100%; /* Full height */
-        overflow: auto; /* Enable scroll if needed */
-        background-color: rgb(0,0,0); /* Fallback color */
-        background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-    }
+/* Modal Content */
+.modal-content {
+    font-size: 1.2em;
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 70%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
 
-    /* Modal Content */
-    .modal-content {
-        font-size: 1.2em;
-        position: relative;
-        background-color: #fefefe;
-        margin: auto;
-        padding: 0;
-        border: 1px solid #888;
-        width: 70%;
-        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
-        -webkit-animation-name: animatetop;
-        -webkit-animation-duration: 0.4s;
-        animation-name: animatetop;
-        animation-duration: 0.4s
-    }
+.modal-content img{
+    margin:auto;
+}
 
-    .modal-content img{
-        margin:auto;
-    }
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
 
-    /* Add Animation */
-    @-webkit-keyframes animatetop {
-        from {top:-300px; opacity:0}
-        to {top:0; opacity:1}
-    }
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
 
-    @keyframes animatetop {
-        from {top:-300px; opacity:0}
-        to {top:0; opacity:1}
-    }
+/* The Close Button */
+.close, .close1, .close2, .close3, .close4, .close5, .close6{
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
 
-    /* The Close Button */
-    .close, .close1, .close2, .close3, .close4, .close5, .close6{
-        color: white;
-        float: right;
-        font-size: 28px;
-        font-weight: bold;
-    }
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
 
-    .close:hover,
-    .close:focus {
-        color: #000;
-        text-decoration: none;
-        cursor: pointer;
-    }
+.modal-header {
+    padding: 2px 16px;
+    background-color: #2143f6;
+    color: white;
+}
 
-    .modal-header {
-        padding: 2px 16px;
-        background-color: #2143f6;
-        color: white;
-    }
+.modal-body{
+    padding: 2px 16px;
+    display: inline-block;
+}
 
-    .modal-body{
-        padding: 2px 16px;
-        display: inline-block;
-    }
+.cardetails{
+    float:right;
+}
 
-    .cardetails{
-        float:right;
-    }
+.cardetails li {
+    margin:10px 0;
+}
 
-    .cardetails li {
-        margin:10px 0;
-    }
-
-    .modal-footer {
-        padding: 2px 16px;
-        background-color: #2143f6;
-        color: white;
-    }
+.modal-footer {
+    padding: 2px 16px;
+    background-color: #2143f6;
+    color: white;
+}
